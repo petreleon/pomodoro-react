@@ -123,7 +123,6 @@ class pomodoroHome extends React.Component {
         return <CardBody >
 
             <ButtonGroup>
-                <Button onClick={this.toggle}> Testing </Button>
                 <Button onClick={this.pomodoro}>Pomodoro</Button>
                 <Button onClick={this.shortBreak}>Short Break</Button>
                 <Button onClick={this.longBreak}>Long Break</Button>
