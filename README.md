@@ -6,6 +6,11 @@ This is an implementation of [Pomodoro Technique](http://localhost:3000)<br>
 Each Pomodoro has 25 minutes with short break between them and long breaks after 4 pomodoros consecutively<br>
 You can setup alarm music from Vimeo, YouTube, SoundCloud and more, view [documentation](https://www.npmjs.com/package/react-player) and [demo page](https://cookpete.com/react-player/) of ReactPlayer.
 
+![welcome](./images/firstMessage.png)
+![settings](./images/Settings.png)
+![short break](./images/shortBreak.png)
+![settings](./images/Alarm.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
