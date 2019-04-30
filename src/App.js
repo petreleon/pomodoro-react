@@ -26,7 +26,7 @@ function App() {
         </ButtonGroup>
     </header>
 
-        <div className='w-100'>
+        <div >
             <Route exact path="/" component={pomodoroHome} />
             <Route path="/settings" component={pomodoroSettings} />
 

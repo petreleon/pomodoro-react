@@ -128,7 +128,7 @@ class pomodoroHome extends React.Component {
                 <Button onClick={this.shortBreak}>Short Break</Button>
                 <Button onClick={this.longBreak}>Long Break</Button>
             </ButtonGroup>
-            <div>{this.state.stringOutput}</div>
+            <h2>{this.state.stringOutput}</h2>
             <Collapse style={{display: 'flex', justifyContent: 'center'}}
                 isOpen={this.state.collapse}
                 onEntering={this.onEntering}

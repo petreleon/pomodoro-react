@@ -16,8 +16,8 @@ class pomodoroSettings extends React.Component {
         localStorage.setItem("alarmLink", document.getElementById("alarmLink").value.toString());
     }
     render(){
-        return <CardBody className='w-100'>
-            <InputGroup>
+        return <CardBody >
+            <InputGroup >
                 <InputGroupAddon addonType="prepend">
                     Pomodoro
                 </InputGroupAddon>
