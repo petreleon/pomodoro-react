@@ -1,0 +1,54 @@
+Index: src/App.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\r\nimport logo from './logo.svg';\r\nimport './App.css';\r\n\r\nfunction App() {\r\n  return (\r\n    <div className=\"App\">\r\n      <header className=\"App-header\">\r\n        <img src={logo} className=\"App-logo\" alt=\"logo\" />\r\n        <p>\r\n          Edit <code>src/App.js</code> and save to reload.\r\n        </p>\r\n        <a\r\n          className=\"App-link\"\r\n          href=\"https://reactjs.org\"\r\n          target=\"_blank\"\r\n          rel=\"noopener noreferrer\"\r\n        >\r\n          Learn React\r\n        </a>\r\n      </header>\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default App;\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/App.js	(date 1556564846000)
++++ src/App.js	(date 1556564563428)
+@@ -1,26 +1,24 @@
+ import React from 'react';
+-import logo from './logo.svg';
+ import './App.css';
+-
++import { Button, ButtonGroup, Card} from 'reactstrap';
++import { BrowserRouter as Router, Route, Link } from "react-router-dom";
++import pomodoroHome from "./pomodoroHome"
++import CardBody from "reactstrap/es/CardBody";
+ function App() {
+-  return (
+-    <div className="App">
+-      <header className="App-header">
+-        <img src={logo} className="App-logo" alt="logo" />
+-        <p>
+-          Edit <code>src/App.js</code> and save to reload.
+-        </p>
+-        <a
+-          className="App-link"
+-          href="https://reactjs.org"
+-          target="_blank"
+-          rel="noopener noreferrer"
+-        >
+-          Learn React
+-        </a>
+-      </header>
+-    </div>
+-  );
++  return <div className="App">
++      <Router>
++    <header className="App-header">
++        <ButtonGroup>
++            <Button>Home</Button>
++            <Button>Settings</Button>
++        </ButtonGroup>
++    </header>
++
++        <Card className='w-100'>
++            <Route exact path="/" component={pomodoroHome} />
++        </Card>
++      </Router>
++  </div>;
+ }
+ 
+ export default App;
