@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-##Project presentation - Pomodoro App
+## Project presentation - Pomodoro App
 
 This is an implementation of [Pomodoro Technique](http://localhost:3000)<br>
 Each Pomodoro has 25 minutes with short break between them and long breaks after 4 pomodoros consecutively<br>
